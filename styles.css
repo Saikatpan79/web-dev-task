@@ -1,0 +1,105 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #613131;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #3d4d04;
+    font-size: 14px;
+}
+
+h2 {
+    text-align: center;
+    color: #1a1693;
+    margin-bottom: 20px;
+}
+
+.team-section {
+    margin-bottom: 40px;
+}
+
+.team-section h3 {
+    text-align: center;
+    color: #7e0c6d;
+    margin-bottom: 20px;
+}
+
+.team-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.founders .team-member,
+.vps .team-member {
+    width: 200px; /* Adjust width to fit two founders and three VPs properly */
+    margin: 10px 20px; /* Add horizontal margin for spacing */
+}
+
+.developers-row .team-member {
+    width: 150px; /* Adjust width to fit four developers and three developers properly */
+    margin: 10px 15px; /* Add horizontal margin for spacing */
+}
+
+.sales-marketing-row .team-member {
+    width: calc(25% - 20px); /* Width for 4 team members in the first row */
+    margin: 10px 10px; /* Add horizontal margin for spacing */
+}
+
+.sales-marketing-row .team-member.founder {
+    width: calc(26% - 20px); /* Width for 3 team members in the second row */
+    margin: 10px 15px; /* Add horizontal margin for spacing */
+}
+
+.team-member {
+    text-align: center;
+    margin: 10px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    color: #333;
+    font-size: 14px;
+}
+
+.team-member strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+}
